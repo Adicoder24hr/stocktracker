@@ -26,3 +26,11 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py createsuperuser  # create admin user
 python manage.py runserver
+
+## 🔐 Demo (Deployed)
+
+**Live URL**: https://adityabhalerao.pythonanywhere.com/admin/
+
+**Admin Login:**
+- Username: `aditya`
+- Password: `Adiwar24hr@`
