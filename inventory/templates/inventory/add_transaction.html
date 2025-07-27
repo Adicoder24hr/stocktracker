@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction</title>
+</head>
+<body>
+    <h2>Add Transaction</h2>
+    <form method="post">
+        {% csrf_token %}
+        Reference #: <input type="text" name="ref" required><br><br>
+        Product:
+        <select name="product">
+            {% for p in products %}
+            <option value="{{p.id}}">{{p.name}}</option>
+            {% endfor %}
+        </select><br><br>
+        Quantity Change(+ve or -ve): <input type="submit" name="qty"><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
